@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+</body>
+</html>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+      
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="latitude_vs_temperature.html">Max Temperature</a>
+              <a class="dropdown-item" href="latitude_vs_humidity.html">Humidity</a>
+              <a class="dropdown-item" href="latitude_vs_clouds.html">Cloudiness</a>
+              <a class="dropdown-item" href="latitude_vs_wind.html">Wind Speed</a>
+              <div class="dropdown-divider"></div>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="latitude_comparisons.html">Comparisons <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="latitude_data.html">Data</a>
+          </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+
+  <!-- Portfolio Item Heading -->
+  <h1 class="my-4">Latitude
+    <br>
+    <small> vs. Wind Speed</small>
+  </h1>
+
+  <!-- Portfolio Item Row -->
+  <div class="row">
+
+    <div class="col-md-8 col-sm-6 mb-4">
+        <img target="_self" src="Images/wind_lat.png" alt="Wind Speed" style="width:750px;height:500px;">
+    </div>
+
+    <div class="col-md-4 col-sm-6 mb-4">
+      <h3 class="my-3">Summary Findings</h3>
+      <p>As somewhat expected, there does not seem to be a noticable patter in Wind Speed and approximate location to the equator.</p>
+      <p>The plot does however shows that most cities experienced mild Wind Speeds below 15 MPH on date data were collected.</p>
+    </div>
+
+  </div>
+  <!-- /.row -->
+  <!-- Visualizations Row -->
+  <h3 class="my-4">Visualizations</h3>
+
+  <div class="row">
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="latitude_vs_temperature.html">
+        <small> vs. Max Temperature</small>
+          <a target="_self" href="latitude_vs_temperature.html">
+            <img src="Images/temp_lat.png" alt="Max Tempurature" style="width:250px;height:150px;">
+          </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="latitude_vs_humidity.html">
+        <small> vs. Humidity</small>  
+          <a target="_self" href="latitude_vs_humidity.html">
+            <img src="Images/humid_lat.png" alt="Humidity" style="width:250px;height:150px;">
+          </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="latitude_vs_clouds.html">
+        <small> vs. Cloudiness</small>
+        <a target="_self" href="latitude_vs_clouds.html">
+            <img src="Images/cloud_lat.png" alt="Cloudiness" style="width:250px;height:150px;">
+        </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="latitude_vs_wind.html">
+        <small> vs. Wind Speed</small>
+          <a target="_self" href="latitude_vs_wind.html">
+            <img src="Images/wind_lat.png" alt="Wind Speed" style="width:250px;height:150px;">
+          </a>
+    </div>
+
+  </div>
+</div>
+</body>
+
+<script src="Resources\jquery.min.js"></script>
+<script src="Resources\bootstrap.min.js"></script>
+
+</html>
